@@ -10,22 +10,22 @@ const Footer = () => {
         <h5 className="text-xl font-bold mb-6">Features</h5>
         <ul className="list-none footer-links">
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Cool stuff</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Cool stuff</a>
           </li>
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Random feature</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Random feature</a>
           </li>
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Team feature</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Team feature</a>
           </li>
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Stuff for developers</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Stuff for developers</a>
           </li>
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Another one</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Another one</a>
           </li>
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Last time</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Last time</a>
           </li>
         </ul>
       </div>
@@ -33,16 +33,16 @@ const Footer = () => {
         <h5 className="text-xl font-bold mb-6">Resources</h5>
         <ul className="list-none footer-links">
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Resource</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Resource</a>
           </li>
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Resource name</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Resource name</a>
           </li>
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Another resource</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Another resource</a>
           </li>
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Final resource</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Final resource</a>
           </li>
         </ul>
       </div>
@@ -50,16 +50,16 @@ const Footer = () => {
         <h5 className="text-xl font-bold mb-6">About</h5>
         <ul className="list-none footer-links">
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Team</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Team</a>
           </li>
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Locations</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Locations</a>
           </li>
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Privacy</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Privacy</a>
           </li>
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Terms</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Terms</a>
           </li>
         </ul>
       </div>
@@ -67,13 +67,13 @@ const Footer = () => {
         <h5 className="text-xl font-bold mb-6">Help</h5>
         <ul className="list-none footer-links">
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Support</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Support</a>
           </li>
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Help Center</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Help Center</a>
           </li>
           <li className="mb-2">
-            <a href="#" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Contact Us</a>
+            <a href="/" className="border-b border-solid border-transparent hover:border-purple-800 hover:text-purple-800">Contact Us</a>
           </li>
         </ul>
       </div>
