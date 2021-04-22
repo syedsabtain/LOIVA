@@ -28,7 +28,6 @@ export default function NavBar({className}) {
   let location = useLocation();
 
   useEffect(()=>{
-     console.log(location.pathname.toString(),'Path')
      setNavigation(navigation.map((value)=>{
       if(value.path === location.pathname.toString())
       {
@@ -48,14 +47,12 @@ export default function NavBar({className}) {
         }
       }
     }))
-    console.log(navigation,"Navigtion")
-  },[])
+  },[location])
   return (
     <Disclosure as="nav" className="bg-transparent   ">
       {({ open }) => (
         
         <>
-        {console.log(open,"value Of Open")}
           <div className=" mx-auto px-2 sm:px-6 md:px-6 lg:px-8 ">
             <div className="relative flex items-center justify-end           h-16">
               <div className="absolute inset-y-0 left-0 flex items-center sm:block md:block sm:mt-2 md:-2 lg:hidden ">
