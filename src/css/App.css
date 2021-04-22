@@ -2,7 +2,7 @@
   padding: 17px 30px 184px 30px;
   background-repeat: no-repeat !important;
   background-size: cover  !important;
-  background-position: center ;
+  background-position: center !important ;
    
   
 }
@@ -37,7 +37,6 @@
 
 .NavButton {
   width: 114px;
-  padding: 8px 7px;
   border-radius: 4px;
   border: solid 2px #73c5c5;
   background-color: #73c5c546;
