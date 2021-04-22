@@ -2,7 +2,6 @@
 
 import { Disclosure } from '@headlessui/react'
 import {MenuIcon, XIcon } from '@heroicons/react/outline'
-import { useEffect, useState } from 'react'
 import Logo from '../images/loiva-logo-rgb.png'
 import {useLocation, Link} from 'react-router-dom'
 
@@ -14,9 +13,11 @@ function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
 }
 
+
+
 export default function NavBar({className}) {
 
-  let [navigation,setNavigation] = useState([
+  let navigation = [
     { name: 'Home', path: '/', current: false },
     { name: 'MyDesign', path: '/MyDesign', current: false },
     // { name: 'Customers', href: '#', current: false },
@@ -24,30 +25,11 @@ export default function NavBar({className}) {
     { name: 'Partners', path: '/t', current: false },
     { name: 'About Us', path: '/f', current: false },
     
-  ])
+  ]
   let location = useLocation();
 
-  useEffect(()=>{
-     setNavigation(navigation.map((value)=>{
-      if(value.path === location.pathname.toString())
-      {
+ 
 
-        return {
-          name:value.name,
-          path:value.path,
-          current:true
-        }
-      }
-      else {
-
-        return {
-          name:value.name,
-          path:value.path,
-          current:false
-        }
-      }
-    }))
-  },[location])
   return (
     <Disclosure as="nav" className="bg-transparent   ">
       {({ open }) => (
@@ -86,7 +68,7 @@ export default function NavBar({className}) {
                         key={item.name}
                         to={item.path}
                         className={classNames(
-                          item.current ? 'text-white bg-primary' : 'text-white hover:bg-primary hover:text-white',
+                          item.path === location.pathname ? 'text-white bg-primary' : 'text-white hover:bg-primary hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
                         aria-current={item.current ? 'page' : undefined}
@@ -138,7 +120,7 @@ export default function NavBar({className}) {
                   key={item.name}
                   to={item.path}
                   className={classNames(
-                    item.current ? ' text-white bg-primary' : 'text-white hover:bg-primary hover:text-white',
+                    item.path === location.pathname ? ' text-white bg-primary' : 'text-white hover:bg-primary hover:text-white',
                     'block px-3 py-2 rounded-md text-base font-medium'
                   )}
                   aria-current={item.current ? 'page' : undefined}
