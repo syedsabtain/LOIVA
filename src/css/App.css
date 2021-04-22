@@ -1,0 +1,53 @@
+.Backgrounds-Light {
+  padding: 17px 30px 184px 30px;
+  background-repeat: no-repeat !important;
+  background-size: cover  !important;
+  background-position: center ;
+   
+  
+}
+
+.RectangleCard {
+  width: 209px;
+  height: 48px;
+  padding: 15px 47px 14px 46px;
+  border-radius: 4px;
+  background-color: #73c5c5;
+}
+.get-the-app {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.11px;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+
+.RectangleLast {
+  max-width: 1200px;
+  height: 150px;
+  border-radius: 4px;
+  border: solid 2px #73c5c5;
+  margin-bottom: 40px;
+}
+
+.NavButton {
+  width: 114px;
+  padding: 8px 7px;
+  border-radius: 4px;
+  border: solid 2px #73c5c5;
+  background-color: #73c5c546;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.1px;
+  text-align: center;
+  color: #ffffff;
+
+}
