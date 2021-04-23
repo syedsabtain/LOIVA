@@ -1,14 +1,16 @@
 import './css/App.css';
 import './css/all.min.css'
-import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
+import {BrowserRouter as Router, Route, Routes, } from 'react-router-dom'
 import MainPage from './Component/MainPage'
 import SecondPage from './Component/SecondPage'
 function App() {
     return (
         <Router>
             <Routes>
-                <Route path='/' ><MainPage/></Route>
-                <Route path='/MyDesign' ><SecondPage/></Route>
+                <Route path='/' element={<MainPage/>}></Route>
+                <Route path='/MyDesign' element={<SecondPage/>}></Route>
+                <Route  path={'*'} element={<MainPage />}></Route>
+                
 
             </Routes>
         </Router>
@@ -16,3 +18,6 @@ function App() {
 }
 
 export default App;
+
+
+
