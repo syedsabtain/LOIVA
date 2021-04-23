@@ -22,8 +22,8 @@ export default function NavBar({className}) {
     { name: 'MyDesign', path: '/MyDesign', current: false },
     // { name: 'Customers', href: '#', current: false },
     // { name: 'Solutions', href: '#', current: false },
-    { name: 'Partners', path: '/t', current: false },
-    { name: 'About Us', path: '/f', current: false },
+    { name: 'Partners', path: '/Partners', current: false },
+    { name: 'About Us', path: '/AboutUs', current: false },
     
   ]
   let location = useLocation();
@@ -76,7 +76,7 @@ export default function NavBar({className}) {
                         {item.name}
                       </Link>
                     ))}
-                  <button className='NavButton uppercase h-8 text-sm hover:bg-primary' >Login In</button>
+                  <Link to='login' className='NavButton pt-1.5 uppercase h-8 text-sm hover:bg-primary' >Login In</Link>
                   <div className="border-2 h-8 outline-none rounded text-white bg-transparent inset-y-0 right-0 flex items-center">
           <label htmlFor="currency" className="sr-only ">
             Currency
