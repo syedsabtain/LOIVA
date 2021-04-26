@@ -55,3 +55,19 @@
   background-size: cover  !important;
   background-position: center !important ;
 }
+
+@media screen and (min-width: 1536px) {
+  .Backgrounds-Light {
+    padding: 17px 30px 200px 30px;
+    background-repeat: no-repeat !important;
+    background-size: cover  !important;
+    background-position: center !important;
+    height: 1000px;
+  }
+}
+.wrapper{
+  display:grid;
+  /* height:100vh; */
+  place-items:center;
+  background-color: transparent;
+}

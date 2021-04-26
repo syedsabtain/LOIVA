@@ -4,10 +4,25 @@ import { Disclosure } from '@headlessui/react'
 import {MenuIcon, XIcon } from '@heroicons/react/outline'
 import Logo from '../images/loiva-logo-rgb.png'
 import {useLocation, Link} from 'react-router-dom'
+import Select from '@material-ui/core/Select';
+import MenuItem from '@material-ui/core/MenuItem';
+import { useState } from 'react';
+import FormControl from '@material-ui/core/FormControl';
+import { makeStyles } from '@material-ui/core/styles'; 
 
- 
-
-
+const useStyles = makeStyles((theme) => ({
+  formControl: {
+    margin: theme.spacing(1),
+    minWidth: 120,
+    color:'white',
+    border:"0px"
+  },
+  selectEmpty: {
+    // marginTop: theme.spacing(2),
+    color:'white',
+    border:'0px'
+  },
+}));
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -16,19 +31,21 @@ function classNames(...classes) {
 
 
 export default function NavBar({className}) {
-
+  const classes = useStyles();
   let navigation = [
     { name: 'Home', path: '/', current: false },
     { name: 'MyDesign', path: '/MyDesign', current: false },
     // { name: 'Customers', href: '#', current: false },
     // { name: 'Solutions', href: '#', current: false },
     { name: 'Partners', path: '/Partners', current: false },
-    { name: 'About Us', path: '/AboutUs', current: false },
+    { name: 'About Us', path: '/About-us', current: false },
     
   ]
   let location = useLocation();
-
- 
+   let [navValue,setNavValue] = useState('France')
+  const HandleNavValue =(event)=>{
+    setNavValue(event.target.value)
+  }
 
   return (
     <Disclosure as="nav" className="bg-transparent   ">
@@ -81,7 +98,26 @@ export default function NavBar({className}) {
           <label htmlFor="currency" className="sr-only ">
             Currency
           </label>
-          <select
+          <FormControl className={classes.formControl.concat(' focus:border-4  focus:border-primary')} style={{border:'0px !important'}}>
+          <Select
+          // labelId="demo-simple-select-helper-label"
+          // id="demo-simple-select-helper"
+          labelId="demo-simple-select-outlined-label"
+          id="demo-simple-select-outlined"
+          value={navValue}
+          displayEmpty
+          onChange={HandleNavValue}
+          color={'primary'}
+          className={classes.selectEmpty}
+
+        >
+          
+          <MenuItem value={"France"} style={{border:'0px'}}>France</MenuItem>
+          <MenuItem value={'German'}>German</MenuItem>
+          <MenuItem value={'English'}>English</MenuItem>
+        </Select>
+        </FormControl>
+          {/* <select
             id="currency"
             name="currency"
             className=" focus:bg-primary  cursor-pointer hover:bg-primary outline-none text-white bg-transparent focus:border-indigo-500 h-full py-0 pl-2 pr-7 border-transparent   sm:text-sm rounded-md"
@@ -89,7 +125,7 @@ export default function NavBar({className}) {
             <option className=''>France</option>
             <option className=''>German</option>
             <option className=''>English</option>
-          </select>
+          </select> */}
         </div>
         <div className="border-2 h-8 outline-none rounded text-white inset-y-0 right-0 flex items-center">
           <label htmlFor="currency" className="sr-only ">

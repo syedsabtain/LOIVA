@@ -28,7 +28,7 @@ function App() {
                 className=' bg-no-repeat Backgrounds-Light    '
                 backgroundimage={backgroundimage}>
                 <NavBar className=''></NavBar>
-                <div className='flex justify-center items-center mt-48'>
+                <div className='flex justify-center items-center mt-48 2xl:mt-72'>
                     <div className=' flex flex-col justify-center items-center'>
                         <h1
                             className=' max-w-5xl font-bold  tracking-wide text-center text-4xl md:text-5xl lg:text-6xl	text-white mb-11'>Cycling and MaaS combined, giving you more than a bike</h1>
@@ -68,9 +68,11 @@ function App() {
                             ?.map((value, key) => {
 
                                 return (
-                                    <CardComp
+                                    <div className='flex  flex-col justify-center  items-center'>
+                                        <CardComp
+                                        style={{maxWidth:'568px'}}
                                         key={key}
-                                        className='flex flex-col justify-center  items-center ml-1 mr-1 mt-5 mb-2 lg:mt-0 lg:mb-0 shadow p-5   border border-primary rounded-md'
+                                        className=' ml-1 mr-1 mt-5 mb-2 lg:mt-0 lg:mb-0 shadow p-5   border border-primary rounded-md'
                                         imgSrc={value.imgSrc}
                                         imgClass=" max-w-lg	 max-h-sm container top">
                                         <div className="flex flex-col justify-center items-center w-auto">
@@ -82,6 +84,7 @@ function App() {
 
                                         </div>
                                     </CardComp>
+                                        </div>
                                 )
                             })}
 
