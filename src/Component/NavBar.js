@@ -48,7 +48,7 @@ export default function NavBar({className}) {
   }
 
   return (
-    <Disclosure as="nav" className="bg-transparent   ">
+    <Disclosure as="nav" className={`bg-transparent ${className} `}>
       {({ open }) => (
         
         <>

@@ -27,6 +27,8 @@ function App() {
             <BackgroumdComp
                 className=' bg-no-repeat Backgrounds-Light    '
                 backgroundimage={backgroundimage}>
+                
+                
                 <NavBar className=''></NavBar>
                 <div className='flex justify-center items-center mt-48 2xl:mt-72'>
                     <div className=' flex flex-col justify-center items-center'>
@@ -38,8 +40,10 @@ function App() {
                         </button>
                     </div>
                 </div>
+            
+               
             </BackgroumdComp>
-            <div className='flex justify-center items-center mt-20 ml-1 mr-1 shadow-xl  p-7 pb-20'>
+            <div className='flex  justify-center items-center mt-20 ml-1 mr-1 shadow-xl  p-7 pb-20'>
                 <div className=' m-auto flex flex-col justify-center items-center'>
                     <div className=' max-w-2xl lg:max-w-5xl text-center text-xl pb-10 '>
                         <p>Cycling in daily life is no longer a problem.</p>

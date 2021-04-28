@@ -3,7 +3,8 @@
   background-repeat: no-repeat !important;
   background-size: cover  !important;
   background-position: center !important ;
-   
+ 
+
   
 }
 
@@ -49,6 +50,42 @@
   text-align: center;
   color: #ffffff;
 
+}
+.aboutpagebg{
+  height: 1000px;
+  width: 100%;
+}
+.misssionpagebg{
+  height: 700px  !important;
+  width: 100%;
+}
+.overlaymission{
+  position: absolute;
+  top: 1000px;
+  left: 0;
+  height: 700px;
+  width: 100%;
+  background-color: #212529;
+  /* background: linear-gradient(
+    180deg
+    , rgba(255,255,255,0.24693627450980393) 12%, rgba(106,106,115,0.6250875350140056) 30%, rgba(115,197,197,0.5718662464985995) 100%); */
+  /* background-color: white; */
+
+  opacity: 0.5;
+}
+.overlayDiv{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1000px;
+  width: 100%;
+  /* background-color: #212529; */
+  background: linear-gradient(
+    180deg
+    , rgba(255,255,255,0.24693627450980393) 12%, rgba(106,106,115,0.6250875350140056) 30%, rgba(115,197,197,0.5718662464985995) 100%);
+  /* background-color: white; */
+
+  opacity: 1;
 }
 .comingSoon{
   background-repeat: no-repeat !important;
