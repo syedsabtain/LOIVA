@@ -34,7 +34,7 @@ export default function NavBar({className}) {
   const classes = useStyles();
   let navigation = [
     { name: 'Home', path: '/', current: false },
-    { name: 'MyDesign', path: '/MyDesign', current: false },
+    // { name: 'MyDesign', path: '/MyDesign', current: false },
     // { name: 'Customers', href: '#', current: false },
     // { name: 'Solutions', href: '#', current: false },
     { name: 'Partners', path: '/Partners', current: false },
@@ -43,8 +43,15 @@ export default function NavBar({className}) {
   ]
   let location = useLocation();
    let [navValue,setNavValue] = useState('France')
-  const HandleNavValue =(event)=>{
-    setNavValue(event.target.value)
+   let [navValue2,setNavValue2] = useState('En')
+
+  const HandleNavValue =(event,option)=>{
+    if(option === 1 ){
+      setNavValue(event.target.value)
+    }
+    else{
+      setNavValue2(event.target.value)
+    }
   }
 
   return (
@@ -95,9 +102,9 @@ export default function NavBar({className}) {
                     ))}
                   <Link to='login' className='NavButton pt-1.5 uppercase h-8 text-sm hover:bg-primary' >Login In</Link>
                   <div className="border-2 h-8 outline-none rounded text-white bg-transparent inset-y-0 right-0 flex items-center">
-          <label htmlFor="currency" className="sr-only ">
+          {/* <label htmlFor="currency" className="sr-only ">
             Currency
-          </label>
+          </label> */}
           <FormControl className={classes.formControl.concat(' focus:border-4  focus:border-primary')} style={{border:'0px !important'}}>
           <Select
           // labelId="demo-simple-select-helper-label"
@@ -106,7 +113,9 @@ export default function NavBar({className}) {
           id="demo-simple-select-outlined"
           value={navValue}
           displayEmpty
-          onChange={HandleNavValue}
+          onChange={(e)=>{
+            HandleNavValue(e,1)
+          }}
           color={'primary'}
           className={classes.selectEmpty}
 
@@ -128,7 +137,7 @@ export default function NavBar({className}) {
           </select> */}
         </div>
         <div className="border-2 h-8 outline-none rounded text-white inset-y-0 right-0 flex items-center">
-          <label htmlFor="currency" className="sr-only ">
+          {/* <label htmlFor="currency" className="sr-only ">
             Currency
           </label>
           <select
@@ -139,7 +148,28 @@ export default function NavBar({className}) {
             <option className=''>En</option>
             <option className=''>Fr</option>
             <option className=''>EUR</option>
-          </select>
+          </select> */}
+          <FormControl className={classes.formControl.concat(' focus:border-4  focus:border-primary')} style={{border:'0px !important'}}>
+          <Select
+          // labelId="demo-simple-select-helper-label"
+          // id="demo-simple-select-helper"
+          labelId="demo-simple-select-outlined-label"
+          id="demo-simple-select-outlined"
+          value={navValue2}
+          displayEmpty
+          onChange={(e)=>{
+            HandleNavValue(e,2)
+          }}
+          color={'primary'}
+          className={classes.selectEmpty}
+
+        >
+          
+          <MenuItem value={"En"} style={{border:'0px'}}>En</MenuItem>
+          <MenuItem value={'Fr'}>Fr</MenuItem>
+          <MenuItem value={'EUR'}>EUR</MenuItem>
+        </Select>
+        </FormControl>
         </div>
 
                     

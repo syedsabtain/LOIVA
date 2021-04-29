@@ -10,8 +10,8 @@ function App() {
     return (
         <Router>
             <Routes>
-                <Route path='/' element={<MainPage/>}></Route>
-                <Route path='/MyDesign' element={<SecondPage/>}></Route>
+                <Route path='/' element={<SecondPage/>}></Route>
+                {/* <Route path='/MyDesign' element={<SecondPage/>}></Route> */}
                 <Route path='/About-us' element={<Aboutpage/>}></Route>
 
                 <Route  path={'*'} element={<StillinProgress />}></Route>

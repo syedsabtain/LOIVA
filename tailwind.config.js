@@ -19,12 +19,16 @@ module.exports = {
         light: '#73c5c5',
         DEFAULT: '#73c5c5',
         dark: '#73c5c5',
-      }},
+      },
+    secondary:{
+      DEFAULT:"#e98b86",
+    }},
     backgroundColor: theme => ({
       ...theme('colors'),
       'primary': '#73c5c5',
-      'secondary': '#ffed4a',
+      'secondary': '#e98b86',
       'danger': '#e3342f',
+      'transparent':'transparent'
      }),
 
   },
