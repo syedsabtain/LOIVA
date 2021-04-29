@@ -4,9 +4,11 @@ import BackgroumdComp from './BackgroundComp'
 import CardComp from './CardComp'
 import cardimage1 from '../images/media-light-image.png'
 import cardimage2 from '../images/media-light-image2.png'
-
+import backgroundsecond from '../images/values.jpg'
 import NavBar from './NavBar'
 import Footer from './Footer';
+import BackgroundComp from './BackgroundComp'
+import MissionCard from '../AtomComponent/MainCard'
 
 const cardData = [
     {
@@ -43,25 +45,35 @@ function App() {
             
                
             </BackgroumdComp>
-            <div className='flex  justify-center items-center mt-20 ml-1 mr-1 shadow-xl  p-7 pb-20'>
-                <div className=' m-auto flex flex-col justify-center items-center'>
-                    <div className=' max-w-2xl lg:max-w-5xl text-center text-xl pb-10 '>
-                        <p>Cycling in daily life is no longer a problem.</p>
+            <BackgroundComp
+          className=' bg-no-repeat Backgrounds-Light misssionpagebg    '
 
-                        <p>If necessary, combine a bike with metro, train, choose intermodal trips.</p>
+          backgroundimage={'https://cdn.wallpapersafari.com/99/0/5tdTEH.jpg'}>
+          <>
+            <div className=' '>
 
-                        <p className='mt-6'>
-                            Rent a car occasionally for the weekend and use a taxi as a solution for social
-                            activities or even groceries.</p>
-
-                        <p className='mt-6'>
-                            Loïva offers choices for everyone, in every situation at any time.
-                        </p>
-                        <p>
-                            Enjoy the combination of Cycling and Mobility as a Service (MaaS).</p>
-                    </div>
-                </div>
             </div>
+          </>
+
+        </BackgroundComp>
+        <div className='absolute items-center w-full z-10 m-auto -mt-80 h-full' >
+        
+          <MissionCard
+        
+          backgroundImage={"https://cdn.wallpapersafari.com/99/0/5tdTEH.jpg"}
+          paragraph=' Cycling in daily life is no longer a problem. If necessary, combine a bike with metro, train,
+          choose intermodal trips. Rent a car occasionally for the weekend and use a taxi as a solution for social Loïva offers choices for everyone, in every situation at any time.
+          Enjoy the combination of Cycling and Mobility as a Service (MaaS).'
+          />
+        </div>
+
+        <div className='w-full h-60'>
+
+        </div>
+        <div className='w-full h-96 md:hidden ' style={{height:'200px'}}>
+
+        </div>  
+           
             <div className='flex  flex-col justify-center  mt-20  '>
                 <div className='text-center'>
                     <h2 className='text-4xl md:text-5xl font-extrabold tracking-wide '>Our Solutions</h2>
