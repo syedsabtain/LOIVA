@@ -1,12 +1,9 @@
 import backgroundimage from '../images/anotherimg.jpg';
 import backgroundsecond from '../images/aboutpg.jpg';
-import backgroundvalue from '../images/values.jpg'
 
 import BackgroumdComp from './BackgroundComp';
-import CardComp from './CardComp';
-import cardimage1 from '../images/media-light-image.png';
-import cardimage2 from '../images/media-light-image2.png';
-import about from '../images/about1.png';
+// import cardimage1 from '../images/media-light-image.png';
+// import cardimage2 from '../images/media-light-image2.png';
 import community from '../images/community.jpg';
 import inclusion from '../images/inclusion.jpg';
 import cohesion from '../images/cohesion.jpg';
@@ -19,19 +16,19 @@ import OurTeamCard from '../AtomComponent/OutTeamCard';
 import ValueCard from '../AtomComponent/ValueCard';
 import MissionCard from '../AtomComponent/MainCard'
 
-const cardData = [
-    {
-        imgSrc: cardimage1,
-        title: 'Cycling as a Service',
-        pagaGraph: 'Enables B2B, B2C and individual customers to use bike leasing and maintenance se' +
-                'rvices as they wish, and allows access to optional mobility modes.'
-    }, {
-        imgSrc: cardimage2,
-        title: 'Mobility as a Service',
-        pagaGraph: 'Allows customers to book and pay for diverse mobility options, and plan intermod' +
-                'al trips. (subway, bus, taxi, scooter…)'
-    }
-]
+// const cardData = [
+//     {
+//         imgSrc: cardimage1,
+//         title: 'Cycling as a Service',
+//         pagaGraph: 'Enables B2B, B2C and individual customers to use bike leasing and maintenance se' +
+//                 'rvices as they wish, and allows access to optional mobility modes.'
+//     }, {
+//         imgSrc: cardimage2,
+//         title: 'Mobility as a Service',
+//         pagaGraph: 'Allows customers to book and pay for diverse mobility options, and plan intermod' +
+//                 'al trips. (subway, bus, taxi, scooter…)'
+//     }
+// ]
 const missionData  =[
     {
         imgSrc:community,
@@ -148,6 +145,7 @@ function App() {
                     return (
                      
                       <ValueCard
+                      key={key}
                       title={value.title}
                       pagaGraph={value.pagaGraph}
                       imgSrc={value.imgSrc}

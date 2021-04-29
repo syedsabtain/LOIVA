@@ -4,7 +4,6 @@ import BackgroumdComp from './BackgroundComp'
 import CardComp from './CardComp'
 import cardimage1 from '../images/media-light-image.png'
 import cardimage2 from '../images/media-light-image2.png'
-import backgroundsecond from '../images/values.jpg'
 import NavBar from './NavBar'
 import Footer from './Footer';
 import BackgroundComp from './BackgroundComp'
@@ -84,7 +83,7 @@ function App() {
                             ?.map((value, key) => {
 
                                 return (
-                                    <div className='flex  flex-col justify-center  items-center'>
+                                    <div className='flex  flex-col justify-center  items-center' key={key}>
                                         <CardComp
                                         style={{maxWidth:'568px'}}
                                         key={key}

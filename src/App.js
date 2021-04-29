@@ -1,7 +1,6 @@
 import './css/App.css';
 import './css/all.min.css'
 import {BrowserRouter as Router, Route, Routes, } from 'react-router-dom'
-import MainPage from './Component/MainPage'
 import SecondPage from './Component/SecondPage'
 import StillinProgress from './Component/StillinProgress';
 import Aboutpage from './Component/About';
