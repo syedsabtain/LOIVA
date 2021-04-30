@@ -20,7 +20,8 @@ const useStyles = makeStyles((theme) => ({
   selectEmpty: {
     // marginTop: theme.spacing(2),
     color:'white',
-    border:'0px'
+    
+    
   },
 }));
 
@@ -37,17 +38,19 @@ export default function NavBar({className}) {
     // { name: 'MyDesign', path: '/MyDesign', current: false },
     // { name: 'Customers', href: '#', current: false },
     // { name: 'Solutions', href: '#', current: false },
-    { name: 'Partners', path: '/Partners', current: false },
+    { name: 'Services', path: '/Services', current: false },
     { name: 'About Us', path: '/About-us', current: false },
+    { name: 'Contact', path: '/Contact', current: false },
+
     
   ]
   let location = useLocation();
-   let [navValue,setNavValue] = useState('France')
+  //  let [navValue,setNavValue] = useState('France')
    let [navValue2,setNavValue2] = useState('En')
 
   const HandleNavValue =(event,option)=>{
     if(option === 1 ){
-      setNavValue(event.target.value)
+      // setNavValue(event.target.value)
     }
     else{
       setNavValue2(event.target.value)
@@ -92,69 +95,25 @@ export default function NavBar({className}) {
                         key={item.name}
                         to={item.path}
                         className={classNames(
-                          item.path === location.pathname ? 'text-white bg-primary' : 'text-white hover:bg-primary hover:text-white',
+                          item.path === location.pathname ? 'text-white bg-primary border-b-2 border-secondary' : 'text-white border-b-2  hover:bg-primary hover:border-4 hover:border-secondary hover:text-white',
                           'px-3 py-2 rounded-md text-sm font-medium'
                         )}
+                        // style={{borderWidth:'2px'}}
                         aria-current={item.current ? 'page' : undefined}
                       >
                         {item.name}
                       </Link>
                     ))}
-                  <Link to='login' className='NavButton pt-1.5 uppercase h-8 text-sm hover:bg-primary' >Login In</Link>
-                  <div className="border-2 h-8 outline-none rounded text-white bg-transparent inset-y-0 right-0 flex items-center">
-          {/* <label htmlFor="currency" className="sr-only ">
-            Currency
-          </label> */}
-          <FormControl className={classes.formControl.concat(' focus:border-4  focus:border-primary')} style={{border:'0px !important'}}>
+           
+        <div className="border h-8 mt-1 outline-none rounded text-white inset-y-0 right-0 flex items-center">
+         
+          <FormControl className={classes.formControl.concat(' bg-transparent')} style={{border:'0px !important'}}>
           <Select
-          // labelId="demo-simple-select-helper-label"
-          // id="demo-simple-select-helper"
-          labelId="demo-simple-select-outlined-label"
-          id="demo-simple-select-outlined"
-          value={navValue}
-          displayEmpty
-          onChange={(e)=>{
-            HandleNavValue(e,1)
-          }}
-          color={'primary'}
-          className={classes.selectEmpty}
-
-        >
+          labelId="demo-simple-select-helper-label"
+          id="demo-simple-select-helper"
+          // labelId="demo-simple-select-outline  d-label"
+          // id="demo-simple-select-outlined"
           
-          <MenuItem value={"France"} style={{border:'0px'}}>France</MenuItem>
-          <MenuItem value={'German'}>German</MenuItem>
-          <MenuItem value={'English'}>English</MenuItem>
-        </Select>
-        </FormControl>
-          {/* <select
-            id="currency"
-            name="currency"
-            className=" focus:bg-primary  cursor-pointer hover:bg-primary outline-none text-white bg-transparent focus:border-indigo-500 h-full py-0 pl-2 pr-7 border-transparent   sm:text-sm rounded-md"
-          >
-            <option className=''>France</option>
-            <option className=''>German</option>
-            <option className=''>English</option>
-          </select> */}
-        </div>
-        <div className="border-2 h-8 outline-none rounded text-white inset-y-0 right-0 flex items-center">
-          {/* <label htmlFor="currency" className="sr-only ">
-            Currency
-          </label>
-          <select
-            id="currency"
-            name="currency"
-            className="focus:bg-primary  hover:bg-primary cursor-pointer outline-none text-white focus:border-indigo-500 h-full py-0 pl-2 pr-7 border-transparent bg-transparent  sm:text-sm rounded-md"
-          >
-            <option className=''>En</option>
-            <option className=''>Fr</option>
-            <option className=''>EUR</option>
-          </select> */}
-          <FormControl className={classes.formControl.concat(' focus:border-4  focus:border-primary')} style={{border:'0px !important'}}>
-          <Select
-          // labelId="demo-simple-select-helper-label"
-          // id="demo-simple-select-helper"
-          labelId="demo-simple-select-outlined-label"
-          id="demo-simple-select-outlined"
           value={navValue2}
           displayEmpty
           onChange={(e)=>{
@@ -165,7 +124,7 @@ export default function NavBar({className}) {
 
         >
           
-          <MenuItem value={"En"} style={{border:'0px'}}>En</MenuItem>
+          <MenuItem value={"En"}>En</MenuItem>
           <MenuItem value={'Fr'}>Fr</MenuItem>
           <MenuItem value={'EUR'}>EUR</MenuItem>
         </Select>

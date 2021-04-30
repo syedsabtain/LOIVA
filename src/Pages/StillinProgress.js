@@ -1,6 +1,6 @@
 import backgroundimage from '../images/backgrounds-light.png'
-import BackgroumdComp from './BackgroundComp'
-import NavBar from './NavBar'
+import BackgroumdComp from '../AtomComponent/BackgroundComp'
+import NavBar from '../Component/NavBar'
 
 const StillinProgress = () => {
 

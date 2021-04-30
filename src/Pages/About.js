@@ -1,7 +1,9 @@
-import backgroundimage from '../images/anotherimg.jpg';
+// import backgroundimage from '../images/anotherimg.jpg';
 import backgroundsecond from '../images/aboutpg.jpg';
+// import Photogrid from '../images/grid.png'
+import Photo1 from '../images/g1.jpg'
 
-import BackgroumdComp from './BackgroundComp';
+import BackgroundComp from '../AtomComponent/BackgroundComp';
 // import cardimage1 from '../images/media-light-image.png';
 // import cardimage2 from '../images/media-light-image2.png';
 import community from '../images/community.jpg';
@@ -9,9 +11,8 @@ import inclusion from '../images/inclusion.jpg';
 import cohesion from '../images/cohesion.jpg';
 import innovation from '../images/innovation.jpg';
 
-import NavBar from './NavBar'
-import Footer from './Footer';
-import BackgroundComp from './BackgroundComp';
+import NavBar from '../Component/NavBar'
+import Footer from '../Component/Footer';
 import OurTeamCard from '../AtomComponent/OutTeamCard';
 import ValueCard from '../AtomComponent/ValueCard';
 import MissionCard from '../AtomComponent/MainCard'
@@ -75,10 +76,10 @@ const ourTeamData = [
 function App() {
     return (
       <div className="w-full">
-        <BackgroumdComp
+        <BackgroundComp
           className=' bg-no-repeat Backgrounds-Light   aboutpagebg  '
 
-          backgroundimage={backgroundimage}>
+          backgroundimage={Photo1}>
 
           <div className='overlayDiv'>
             <NavBar className='p-4' ></NavBar>
@@ -102,7 +103,7 @@ function App() {
               </div>
             </div>
           </div>
-        </BackgroumdComp>
+        </BackgroundComp>
 
         <BackgroundComp
           className=' bg-no-repeat Backgrounds-Light misssionpagebg    '
@@ -129,7 +130,7 @@ function App() {
 
         </div>
         
-        <BackgroumdComp
+        <BackgroundComp
           className=' bg-no-repeat  static overflow-hidden'
         >
           <div className='flex  flex-col justify-center  mt-20  max-w-7xl m-auto bg-primary bgtransform'  >
@@ -158,7 +159,7 @@ function App() {
               </div>
             </div>
           </div>
-        </BackgroumdComp>
+        </BackgroundComp>
         <div
           className='flex justify-center items-center  mt-20 mb-10 ml-2 mr-2 md:mt-9 bg-transparent md:m-auto  text-center border-4 border-red RectangleLast shadow-lg'>
           <h1 className='text-4xl font-semibold'>Our Team</h1>

@@ -1,12 +1,12 @@
 
 import backgroundimage from '../images/backgrounds-light.png'
-import BackgroumdComp from './BackgroundComp'
-import CardComp from './CardComp'
+// import BackgroumdComp from './BackgroundComp'
+import CardComp from '../AtomComponent/CardComp'
 import cardimage1 from '../images/media-light-image.png'
 import cardimage2 from '../images/media-light-image2.png'
-import NavBar from './NavBar'
-import Footer from './Footer';
-import BackgroundComp from './BackgroundComp'
+import NavBar from '../Component/NavBar'
+import Footer from '../Component/Footer';
+import BackgroundComp from '../AtomComponent/BackgroundComp'
 import MissionCard from '../AtomComponent/MainCard'
 
 const cardData = [
@@ -25,7 +25,7 @@ const cardData = [
 function App() {
     return (
         <div className="w-full">
-            <BackgroumdComp
+            <BackgroundComp
                 className=' bg-no-repeat Backgrounds-Light    '
                 backgroundimage={backgroundimage}>
                 
@@ -43,7 +43,7 @@ function App() {
                 </div>
             
                
-            </BackgroumdComp>
+            </BackgroundComp>
             <BackgroundComp
           className=' bg-no-repeat Backgrounds-Light misssionpagebg    '
 
