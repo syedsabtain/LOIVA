@@ -157,7 +157,7 @@ const Services = () => {
                   <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" className="absolute left-0 w-full block" style={{ height: 95, top: '-94px' }}>
                     <polygon points="-30,95 583,95 583,65" className="text-primary fill-current" />
                   </svg>
-                  <h4 className="text-xl font-bold text-black">
+                  <h4 className="text-3xl font-bold text-black">
                     Loïva
             </h4>
                   <p className="text-md font-semibold mt-2 text-black">

@@ -88,14 +88,14 @@ function App() {
 
 
               <div className='flex justify-center items-center mt-48 2xl:mt-60  '>
-                <div className=' flex flex-col justify-center items-center'>
+                <div className=' flex flex-col justify-center items-center '>
                   <h1
                     className=' max-w-5xl  font-bold  tracking-wide text-center text-4xl md:text-5xl lg:text-6xl	text-white mb-11'>About Us</h1>
-                  <h5 className='  max-w-xl p-2 text-base md:text-xl  leading-wide text-center  text-white'>Loiva, in Finnish a gently
+                  <h5 className='  max-w-xl p-2 text-base md:text-xl  leading-wide text-center  text-white '>Loiva, in Finnish a gently
                   slope, tells us that the way towards sustainable mobility is manageable and
                   proceeds smoothly. To succeed we need to work together. Loïva will lead the way
                                         to a fairer and wiser mobility for us and future generations.</h5>
-                  <h5 className='max-w-xl mt-4 p-2 text-base md:text-xl  leading-wide text-center  text-white'>Loïva’s works according to four
+                  <h5 className='max-w-xl mt-4 p-2 text-base md:text-xl  leading-wide text-center  text-white '>Loïva’s works according to four
                   values: community, cohesion, inclusion and innovation. With Loïva, together to
                                     go further.</h5>
 
@@ -166,7 +166,7 @@ function App() {
 
         </div>
         <div>
-          <div className="m-auto h-full flex-col md:flex md:flex-row justify-center items-center ">
+          <div className="m-auto h-full flex-col md:flex md:flex-row justify-center items-center  w ">
             {ourTeamData.map((value, key) => {
               return (
 
@@ -176,9 +176,10 @@ function App() {
                 title={value.title}
                 imgSrc={value.imgSrc}
                 paragraph={value.paragraph}
+                paragraphClass="md:w-60"
                 email={value.email}
                 Mainclass={` ${ourTeamData.length === (key + 1) ? ('md:hidden 2xl:block') : ('block')} `}
-                customeStyle={{width:'408px'}}
+                customeStyle={{maxWidth:'320px'}}
                 />
               )
             })}
