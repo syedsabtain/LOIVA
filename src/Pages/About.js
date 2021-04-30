@@ -87,7 +87,7 @@ function App() {
             <div className=' w-full block relative '>
 
 
-              <div className='flex justify-center items-center mt-48 2xl:mt-72  '>
+              <div className='flex justify-center items-center mt-48 2xl:mt-60  '>
                 <div className=' flex flex-col justify-center items-center'>
                   <h1
                     className=' max-w-5xl  font-bold  tracking-wide text-center text-4xl md:text-5xl lg:text-6xl	text-white mb-11'>About Us</h1>
