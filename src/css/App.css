@@ -1,5 +1,5 @@
 .Backgrounds-Light {
-  padding: 17px 30px 184px 30px;
+  padding: 0px 0px 184px 0px;
   background-repeat: no-repeat !important;
   background-size: cover  !important;
   background-position: center !important ;
@@ -126,7 +126,7 @@
 
 @media screen and (min-width: 1536px) {
   .Backgrounds-Light {
-    padding: 17px 30px 200px 30px;
+    padding: 0px 0px 200px 0px;
     background-repeat: no-repeat !important;
     background-size: cover  !important;
     background-position: center !important;

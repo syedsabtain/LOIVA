@@ -26,12 +26,12 @@ function App() {
     return (
         <div className="w-full">
             <BackgroundComp
-                className=' bg-no-repeat Backgrounds-Light    '
+                className=' bg-no-repeat Backgrounds-Light   aboutpagebg    '
                 backgroundimage={backgroundimage}>
                 
                 
-                <NavBar className='pt-3 pb-20 lg:p-4 '></NavBar>
-                <div className='flex justify-center items-center mt-48 2xl:mt-72'>
+                <NavBar className=' pt-3 pb-20 lg:p-4 '></NavBar> 
+                <div className='flex justify-center items-center mt-48 pt-4 2xl:mt-72'>
                     <div className=' flex flex-col justify-center items-center'>
                         <h1
                             className=' max-w-5xl font-bold  tracking-wide text-center text-4xl md:text-5xl lg:text-6xl	text-white mb-11'>Cycling and MaaS combined, giving you more than a bike</h1>
