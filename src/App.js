@@ -4,7 +4,6 @@ import {BrowserRouter as Router, Route, Routes, } from 'react-router-dom'
 import SecondPage from './Component/SecondPage'
 import StillinProgress from './Component/StillinProgress';
 import Aboutpage from './Component/About';
-import MyComponent from 'react-fullpage-custom-loader'
 function App() {
     return (
        
