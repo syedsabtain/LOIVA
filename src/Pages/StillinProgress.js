@@ -9,7 +9,7 @@ const StillinProgress = () => {
             <BackgroumdComp
                 className=' comingSoon  h-screen   '
                 backgroundimage={backgroundimage}>
-                <NavBar className=''></NavBar>
+                <NavBar className='pt-3 pb-20 lg:p-4 '></NavBar>
                 <div className='flex justify-center items-center mt-48'>
                     <div className=' flex flex-col justify-center items-center'>
                         <h1

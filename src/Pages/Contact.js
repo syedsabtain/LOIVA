@@ -9,7 +9,7 @@ const Contact = () =>
         <>
         
         <section className="pb-20 relative block bg-primary " >
-        <NavBar className='p-4'></NavBar>
+        <NavBar className='pt-3 pb-20 lg:p-4 '></NavBar>
         <div
           className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20"
           style={{ height: "80px" }}

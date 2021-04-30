@@ -82,7 +82,7 @@ function App() {
           backgroundimage={Photo1}>
 
           <div className='overlayDiv'>
-            <NavBar className='p-4' ></NavBar>
+            <NavBar className='pt-3 pb-20 lg:p-4 ' ></NavBar>
 
             <div className=' w-full block relative '>
 
