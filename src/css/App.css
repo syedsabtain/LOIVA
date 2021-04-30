@@ -51,9 +51,19 @@
   color: #ffffff;
 
 }
+.selectNav{
+  border-bottom: 0px;
+}
+.MuiInput-underline::after{
+  border-bottom: 2px solid turquoise !important;
+  background-color: transparent !important;
+  box-shadow: transparent !important;
+}
 .aboutpagebg{
   height: 1000px;
   width: 100%;
+  /* background-size: contain !important;
+  background-position: right bottom !important; */
 }
 .misssionpagebg{
   height: 513px  !important;
