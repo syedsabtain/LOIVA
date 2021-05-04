@@ -10,7 +10,7 @@ const MainCard = ({backgroundImage,title,subTitle,paragraph, MaincClass}) =>{
 
           </div>
           <div className="w-full md:w-2/3 shadow-inner border-4 border-gray-100 " style={{ background: 'transparent' }}>
-            <div className="h-full  mx-auto px-6 md:px-0 md:pt-20 md:pb-12 lg:pt-6 md:-ml-6 relative lg:pb-6">
+            <div className="h-full  mx-auto px-6 md:px-0 md:pt-20 md:pb-12 lg:pt-6 md:-ml-6 relative lg:pb-6 transform   hover:scale-105 transition duration-500 ease-in-out cursor-pointer">
               {title ? (
                   <div className="bg-white lg:h-full p-6 -mt-6 md:mt-14 lg:mt-0 relative mb-4 md:mb-0 flex flex-wrap md:flex-wrap items-center rounded border shadow-2xl border-primary">
                   <div className="w-full lg:w-2/5 lg:border-right lg:border-solid text-center md:text-left">

@@ -198,10 +198,10 @@ const Services = () => {
             </div>
             <div className="w-full md:w-5/12 px-4 mr-auto ml-auto mt-32">
               <div className="relative flex flex-col min-w-0 w-full mb-6 mt-48 md:mt-0">
-                <img alt="..." src={photo4} className="w-full align-middle rounded absolute shadow-lg" style={{ maxWidth: 200, left: 217, top: '34px', zIndex: 3 }} />
-                <img alt="..." src={photo1} className="w-full  align-middle rounded-lg absolute shadow-lg z-10 " style={{ maxWidth: 250, left: 260, top: '-160px' }} />
-                <img alt="..." src={ photo2} className="w-full align-middle rounded-lg absolute shadow-lg" style={{ maxWidth: 300, left: 40, top: '-225px', zIndex: 2 }} />
-                <img alt="..." src={photo3}  className="w-full align-middle rounded-lg absolute shadow-2xl" style={{ maxWidth: 300, left: '-50px', top: 25 }} />
+                <img alt="..." src={photo4} className="w-full align-middle rounded absolute shadow-lg transform   hover:scale-150 transition duration-500 ease-in-out cursor-pointer " style={{ maxWidth: 200, left: 217, top: '34px', zIndex: 3 }} />
+                <img alt="..." src={photo1} className="w-full  align-middle rounded-lg absolute shadow-lg z-10 transform  hover:scale-150 transition duration-500 ease-in-out cursor-pointer" style={{ maxWidth: 250, left: 260, top: '-160px' }} />
+                <img alt="..." src={ photo2} className="w-full align-middle rounded-lg absolute shadow-lg transform  hover:scale-150 transition duration-500 ease-in-out cursor-pointer" style={{ maxWidth: 300, left: 40, top: '-225px', zIndex: 2 }} />
+                <img alt="..." src={photo3}  className="w-full align-middle rounded-lg absolute shadow-2xl transform  hover:scale-150 transition duration-500 ease-in-out cursor-pointer" style={{ maxWidth: 300, left: '-50px', top: 25 }} />
                 {/* <img alt="..." src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/component-menu.png" className="w-full align-middle rounded absolute shadow-lg" style={{ maxWidth: 580, left: '-20px', top: 210 }} /> */}
                 {/* <img alt="..." src="https://www.creative-tim.com/learning-lab/tailwind-starter-kit/img/component-btn-pink.png" className="w-full align-middle rounded absolute shadow-xl" style={{ maxWidth: 120, left: 195, top: 95 }} /> */}
               </div>

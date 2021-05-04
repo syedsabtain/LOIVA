@@ -16,6 +16,10 @@ import Footer from '../Component/Footer';
 import OurTeamCard from '../AtomComponent/OutTeamCard';
 import ValueCard from '../AtomComponent/ValueCard';
 import MissionCard from '../AtomComponent/MainCard'
+import team1 from '../images/team1.png'
+import team2 from '../images/team2.jpg'
+import team3 from '../images/team3.png'
+
 
 // const cardData = [
 //     {
@@ -55,19 +59,19 @@ const missionData  =[
 ]
 const ourTeamData = [
   {
-    imgSrc:'https://www.loiva.eu/wp-content/uploads/2020/09/PortraitML.png',
+    imgSrc:team1,
     title:'Martial Labarthe',
     paragraph:'Martial is a mobility expert and especially passionate about cycling. He has a rich international experience in city planning',
     email:'martial.labarthe@loiva.eu'
   },
   {
-    imgSrc:'https://images.unsplash.com/photo-1583864697784-a0efc8379f70?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fG1hbGUlMjBtb2RlbHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&w=1000&q=80',
+    imgSrc:team2,
     title:'Oliver Jack',
     paragraph:'Martial is a mobility expert and especially passionate about cycling. He has a rich international experience in city planning',
     email:'martial.labarthe@loiva.eu'
   },
   {
-    imgSrc:'https://uberone.net/wp-content/uploads/2020/11/13-45-26-free-profile-photo-whatsapp-4.png',
+    imgSrc:team3,
     title:'Connor Liam',
     paragraph:'Martial is a mobility expert and especially passionate about cycling. He has a rich international experience in city planning ',
     email:'martial.labarthe@loiva.eu'

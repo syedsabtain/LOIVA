@@ -44,7 +44,7 @@ const Contact = () =>
           </div>
           <div className="flex flex-wrap mt-12 justify-center">
             <div className="w-full lg:w-3/12 px-4 text-center">
-              <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center">
+              <div className="text-gray-900 p-3 w-12 h-12 shadow-lg rounded-full bg-white inline-flex items-center justify-center ">
                 {/* <i className="fas fa-medal text-xl"></i> */}
                 <i className="fas fa-phone"></i>
               </div>
@@ -78,25 +78,25 @@ const Contact = () =>
               <div className="mt-2 mb-4 text-gray-500">
               <div className="mt-6">
               <button
-                className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 transform   hover:scale-150 transition duration-500 ease-in-out cursor-pointer "
                 type="button"
               >
                 <i className="flex fab fa-twitter"></i>
               </button>
               <button
-                className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 transform   hover:scale-150 transition duration-500 ease-in-out cursor-pointer"
                 type="button"
               >
                 <i className="flex fab fa-facebook-square"></i>
               </button>
               <button
-                className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 transform   hover:scale-150 transition duration-500 ease-in-out cursor-pointer"
                 type="button"
               >
                 <i className="flex fab fa-dribbble"></i>
               </button>
               <button
-                className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 transform   hover:scale-150 transition duration-500 ease-in-out cursor-pointer"
                 type="button"
               >
                 <i className="flex fab fa-github"></i>
@@ -107,7 +107,7 @@ const Contact = () =>
           </div>
         </div>
       </section>
-        <section className=" relative block py-24 lg:pt-0 mt-12 lg:mt-0 ">
+        <section className=" relative block py-24 lg:pt-0 mt-12 lg:mt-0 transform   hover:scale-105 transition duration-500 ease-in-out cursor-pointer">
           <div className="container mx-auto px-4">
             <div className="flex flex-wrap justify-center lg:-mt-64 -mt-40 md:-mt-48">
               <div className="w-full lg:w-6/12 px-4">

@@ -8,6 +8,7 @@ import NavBar from '../Component/NavBar'
 import Footer from '../Component/Footer';
 import BackgroundComp from '../AtomComponent/BackgroundComp'
 import MissionCard from '../AtomComponent/MainCard'
+import bg1 from '../images/bg1.jpg'
 
 const cardData = [
     {
@@ -47,7 +48,7 @@ function App() {
             <BackgroundComp
           className=' bg-no-repeat Backgrounds-Light misssionpagebg    '
 
-          backgroundimage={'https://cdn.wallpapersafari.com/99/0/5tdTEH.jpg'}>
+          backgroundimage={bg1}>
           <>
             <div className=' '>
 
@@ -59,7 +60,7 @@ function App() {
         
           <MissionCard
         
-          backgroundImage={"https://cdn.wallpapersafari.com/99/0/5tdTEH.jpg"}
+          backgroundImage={bg1}
           paragraph=' Cycling in daily life is no longer a problem. If necessary, combine a bike with metro, train,
           choose intermodal trips. Rent a car occasionally for the weekend and use a taxi as a solution for social Loïva offers choices for everyone, in every situation at any time.
           Enjoy the combination of Cycling and Mobility as a Service (MaaS).'

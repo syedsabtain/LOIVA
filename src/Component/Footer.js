@@ -38,25 +38,25 @@ export default function Footer() {
             </h5>
             <div className="mt-6">
               <button
-                className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-blue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 transform   hover:scale-150 transition duration-500 ease-in-out cursor-pointer"
                 type="button"
               >
                 <i className="flex fab fa-twitter"></i>
               </button>
               <button
-                className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-blue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 transform   hover:scale-150 transition duration-500 ease-in-out cursor-pointer"
                 type="button"
               >
                 <i className="flex fab fa-facebook-square"></i>
               </button>
               <button
-                className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 transform   hover:scale-150 transition duration-500 ease-in-out cursor-pointer"
                 type="button"
               >
                 <i className="flex fab fa-dribbble"></i>
               </button>
               <button
-                className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3"
+                className="bg-white text-gray-900 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2 p-3 transform   hover:scale-150 transition duration-500 ease-in-out cursor-pointer"
                 type="button"
               >
                 <i className="flex fab fa-github"></i>
@@ -73,7 +73,7 @@ export default function Footer() {
                   <li>
                     <Link 
                     className={classNames(
-                      '/' === location.pathname ? 'text-gray-700 text-secondary ' : 'text-gray-700 hover:text-primary hover:underline font-semibold block pb-2 text-sm'
+                      '/' === location.pathname ? 'text-gray-700 text-secondary ' : 'text-gray-700 hover:text-primary hover:underline font-semibold block pb-2 text-sm '
                     )}
                          to='/'>Home
                     </Link>
@@ -109,14 +109,14 @@ export default function Footer() {
                 <ul className="list-unstyled">
                   <li>
                     <span className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                    href="https://github.com/creativetimofficial/argon-design-system/blob/master/LICENSE.md">
+                    >
                       Email: <span className=' hover:text-secondary cursor-pointer'>info@loiva.eu​</span>
 
                   </span>
                   </li>
                   <li>
                     <span className="text-gray-700 hover:text-gray-900 font-semibold block pb-2 text-sm"
-                        href="https://creative-tim.com/terms">
+                        >
                           Phone: <span className=' hover:text-secondary cursor-pointer'>+358 40 040 6780</span>
 
                     </span>
